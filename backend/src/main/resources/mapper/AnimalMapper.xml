@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kevin_cx.mapper.AnimalMapper">
+
+    <resultMap id="BaseResultMap" type="com.kevin_cx.model.entity.Animal">
+            <id property="id" column="id" />
+            <result property="name" column="name" />
+            <result property="species" column="species" />
+            <result property="age" column="age" />
+            <result property="gender" column="gender" />
+            <result property="description" column="description" />
+            <result property="health_status" column="health_status" />
+            <result property="adoption_status" column="adoption_status" />
+            <result property="image_url" column="image_url" />
+            <result property="created_time" column="created_time" />
+            <result property="updated_time" column="updated_time" />
+            <result property="deleted_time" column="deleted_time" />
+            <result property="breed" column="breed" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,name,species,age,gender,description,
+        health_status,adoption_status,image_url,created_time,updated_time,
+        deleted_time,breed
+    </sql>
+</mapper>
