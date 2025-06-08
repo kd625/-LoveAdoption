@@ -1,8 +1,8 @@
 -- 创建库
-create database if not exists love_adoption;
+create database if not exists LoveAdoption;
 
 -- 切换库
-use love_adoption;
+use LoveAdoption;
 
 -- 用户表
 create table if not exists user
